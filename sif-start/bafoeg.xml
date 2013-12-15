@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dynamicPolicy author="" description="" name=""
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="SpRuDeL1_1.xsd">
+	<rules>
+		<rule author="ML" name="greaterThan0" severityWeight="1.0">
+			<invariants>
+			</invariants>
+			<testInputs>
+				<testInput>
+					<target>B8</target>
+					<type>NUMERIC</type>
+					<value>4000</value>
+				</testInput>				
+			</testInputs>
+			<postconditions>
+	             <compare>
+                    <target>B36</target>
+                    <value>3360</value>
+                    <relation>equal</relation>
+                </compare>
+             </postconditions>
+		</rule>
+	</rules>
+</dynamicPolicy>
